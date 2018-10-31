@@ -1,7 +1,12 @@
+;; Exercise 1.19
+;; 快速求解裴波那契数
 #lang racket
-(define (fastFib n)
+
+;; 求解裴波那契数
+(define (fast-fib n)
   (fib-iter 1 0 0 1 n))
 
+;; 迭代求解
 (define (fib-iter a b p q count)
   (cond ((= count 0) b)
         ((even? count)
@@ -16,17 +21,18 @@
                         q
                         (- count 1)))))
 
+;; 平方
 (define (square x)
   (* x x))
 
+;; 判断是否为偶数
 (define (even? x)
   (= (remainder x 2) 0))
 
-(fastFib 0)
-(fastFib 1)
-(fastFib 2)
-(fastFib 3)
-(fastFib 4)
-(fastFib 5)
-(fastFib 6)
-(fastFib 7)
+(fast-fib 0)
+(fast-fib 1)
+(fast-fib 2)
+(fast-fib 3)
+(fast-fib 4)
+(fast-fib 5)
+(fast-fib 6)
