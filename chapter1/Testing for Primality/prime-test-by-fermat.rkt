@@ -32,5 +32,5 @@
 
 ;; 费马小定理检验是否为质数，n表示检验次数
 (define (prime-test-by-fermat n)
-  (prime-test-by-fermat-iter n 10))
+  (prime-test-by-fermat-iter n 100000))
 

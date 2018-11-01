@@ -1,5 +1,6 @@
 ;; Exercise 1.16
 #lang racket
+(provide (all-defined-out))
 
 ;; 迭代求幂
 (define (exp-iter a b n)
@@ -18,6 +19,3 @@
 ;; 平方
 (define (square x)
   (* x x))
-
-(fast-exp 3 3)
-(fast-exp 2 10)
