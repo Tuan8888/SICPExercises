@@ -1,4 +1,4 @@
-;; Exercise 1.8
+;; Exercise 1.7
 ;; 改进的牛顿迭代法
 #lang racket
 

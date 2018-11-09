@@ -5,6 +5,6 @@
 
 ;; 最小因数等于本身，证明为质数
 (define (prime-test-by-smallest-divisor x)
-  (= (smallest-divisor x) x))
+  (and (> x 1) (= (smallest-divisor x) x)))
 
 
