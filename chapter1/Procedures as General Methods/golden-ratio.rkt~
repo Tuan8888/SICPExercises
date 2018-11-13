@@ -1,4 +1,0 @@
-;; Exercise 1.35
-;; 利用fixed-point计算黄金分割
-#lang racket
-

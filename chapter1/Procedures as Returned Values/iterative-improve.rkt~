@@ -1,4 +1,0 @@
-;; Exercise 1.46
-;; 执行iterative
-#lang racket
-

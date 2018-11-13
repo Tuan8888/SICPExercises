@@ -1,5 +1,0 @@
-;; Exercise 1.43
-;; 重复执行某函数
-#lang racket
-(require "compose.rkt")
-
