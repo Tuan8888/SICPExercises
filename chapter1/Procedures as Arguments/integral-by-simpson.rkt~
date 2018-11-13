@@ -1,0 +1,15 @@
+;; Simpson's Rule计算integral
+#lang racket
+(require "cube.rkt")
+(require "sum.rkt")
+
+(define (integral-by-simpson f a b n)
+  (define h (/ (- b a) n))
+  (define (next k)
+    (+ k 1))
+  (define (term k)
+    (define yk (f (+ a (* k h)))) 
+    (cond ((or (= k 0) (= k n)) yk)
+          ((even? k) (* 2 yk))
+          (else (* 4 yk))))
+  (sum term 0 next h))

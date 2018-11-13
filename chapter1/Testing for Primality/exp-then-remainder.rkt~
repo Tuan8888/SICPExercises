@@ -1,0 +1,7 @@
+;; Exercise 1.25
+;; 计算幂然后取模
+#lang racket
+
+;; 先计算完幂，最后取模一次
+(define (expmod base exp m)
+  (remainder (fast-expt base exp) m))

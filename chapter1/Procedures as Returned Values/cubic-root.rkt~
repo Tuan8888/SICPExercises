@@ -1,0 +1,7 @@
+;; Exercise 1.40
+;; 牛顿法求解立方根
+#lang racket
+(require "newton-method.rkt")
+
+(define (cubic-root a b c)
+  (newtosn-method (cubic a b c) 1)

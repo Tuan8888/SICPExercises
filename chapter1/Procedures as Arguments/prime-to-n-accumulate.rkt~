@@ -1,0 +1,16 @@
+;; Exercise 1.33
+;; 所有与n互质且小于n的正整数累乘
+#lang racket
+(require "filtered-accumulate.rkt")
+
+;; 欧几里得算法
+(define (gcd a b)
+  (if (= b 0)
+      a
+      (gcd b (remainder-count a b))))
+
+(define (filter x n)
+  (= (gcd x n) 1))
+
+(define (prime-to-n-accumulate n)
+  (filtered-accumulate combiner null-value term a next b filter?))

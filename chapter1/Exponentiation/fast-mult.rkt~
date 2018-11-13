@@ -1,0 +1,18 @@
+;; Exercise 1.17
+#lang racket
+
+;; 倍增
+(define (double x)
+  (+ x x))
+
+;; 减半
+(define (halve x)
+  (/ x 2))
+
+(define (even x)
+  (= (remainder x 2) 0))
+
+(define (fastMult a b)
+  (cond ((= b 0) 0)
+        ((even b) (double (fastMult a (halve b))))
+        (else (+ a (fastMult a (- b 1))))))
