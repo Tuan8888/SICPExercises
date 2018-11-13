@@ -1,6 +1,6 @@
 ;; fixed-point计算
 #lang racket
-(provide fixed-point)
+(provide (all-defined-out))
 
 ;; 设定精度
 (define tolerance 0.00001)

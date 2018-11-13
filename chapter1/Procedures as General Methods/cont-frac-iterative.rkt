@@ -3,6 +3,7 @@
 #lang racket
 (provide (all-defined-out))
 
+;; 计算无限连续小数
 (define (cont-frac-iterative d n k)
   (define (cont-frac-iterative-iter i res)
     (if (= i 0)
