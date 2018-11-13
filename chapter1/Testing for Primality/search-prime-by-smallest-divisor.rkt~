@@ -1,0 +1,7 @@
+;; Exercise 1.22
+;; 搜索给定范围的质数，并打印时间
+;; 判断质数使用最小因子法
+#lang racket
+(require "prime-test-by-smallest-divisor)
+
+(prime-test-by-smallest-divisor 5)

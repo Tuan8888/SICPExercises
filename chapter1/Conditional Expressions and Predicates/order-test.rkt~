@@ -1,0 +1,13 @@
+;Exercise 1.5
+;if the interpreter is applicative-order, it will get stuck in endless loop
+;if the interpreter is normal-order, it will return 0
+#lang racket
+
+(define (p) (p))
+
+(define (test x y)
+  (if (= x 0)
+      0
+      y))
+
+(test 0 (p))

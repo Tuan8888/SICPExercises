@@ -1,0 +1,5 @@
+;; Exercise 1.45
+;; 求解n次方根
+#lang racket
+(require "newtons-method.rkt")
+
