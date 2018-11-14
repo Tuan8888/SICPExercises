@@ -1,10 +1,12 @@
 ;; Exercise 1.16
+;; 迭代求幂
 #lang racket
 (provide (all-defined-out))
 
 ;; 迭代求幂
 (define (exp-iter a b n)
-  (if (= n 0) 
+  (if (= n 0)
+      a
       (if (even n) (exp-iter a (square b) (/ n 2))
           (exp-iter (* a b) b (- n 1)))))
 

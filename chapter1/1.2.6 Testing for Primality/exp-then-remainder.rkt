@@ -1,7 +1,7 @@
 ;; Exercise 1.25
 ;; 计算幂然后取模
 #lang racket
-(require "../Exponentiation/fast-exp.rkt")
+(require (file "../1.2.4 Exponentiation/fast-exp.rkt"))
 
 ;; 先计算完幂，最后取模一次
 (define (expmod base exp m)

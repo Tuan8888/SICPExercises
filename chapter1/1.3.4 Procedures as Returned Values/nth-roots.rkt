@@ -1,8 +1,8 @@
 ;; Exercise 1.45
 ;; 求解n次方根
 #lang racket
-(require (file "../Procedures as General Methods/fixed-point.rkt"))
-(require (file "../Exponentiation/fast-exp.rkt"))
+(require (file "../1.3.3 Procedures as General Methods/fixed-point.rkt"))
+(require (file "../1.2.4 Exponentiation/fast-exp.rkt"))
 (require "repeated.rkt")
 
 ;; average damp

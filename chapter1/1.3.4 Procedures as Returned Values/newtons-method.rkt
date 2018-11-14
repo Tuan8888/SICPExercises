@@ -1,6 +1,6 @@
 ;; 牛顿法求解方程根
 #lang racket
-(require (file "../Procedures as General Methods/fixed-point.rkt"))
+(require (file "../1.3.3 Procedures as General Methods/fixed-point.rkt"))
 (provide (all-defined-out))
 
 ;; 定义dx

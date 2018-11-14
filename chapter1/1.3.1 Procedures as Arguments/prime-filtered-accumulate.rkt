@@ -1,7 +1,7 @@
 ;; Exercise 1.33
 ;; 素数累加
 #lang racket
-(require (file "../Testing for Primality/prime-test-by-smallest-divisor.rkt"))
+(require (file "../1.2.6 Testing for Primality/prime-test-by-smallest-divisor.rkt"))
 (require "filtered-accumulate.rkt")
 
 (define (prime-accumulate a b)
